@@ -8,6 +8,6 @@ public class StartApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(StartApplication.class,args);
-        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start  *****");
+        System.out.println("start >>>>>>>>>>>>>>>>>>>>>>>>>>");
     }
 }

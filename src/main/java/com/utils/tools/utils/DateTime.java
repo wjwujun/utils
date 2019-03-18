@@ -63,7 +63,7 @@ public class DateTime {
 	 * @param currentDate 待转化给定日期时间
 	 * @param datetimeFormat 为日期、时间指定的格式
 	 * @return 按指定格式转后的日期、时间字符串
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static synchronized String convertDateTime(Date currentDate, String datetimeFormat) {
 		if (currentDate == null || "".equals(currentDate)) {
@@ -87,7 +87,6 @@ public class DateTime {
 	 * @param datetimeStr 指定格式的日期日期字符串
 	 * @param datetimeFormat 为日期、时间指定的格式
 	 * @return 转换成的Date类型的日期时间
-	 * @author Allen Zhang
 	 */
 	public static synchronized Date parseDateTime(String datetimeStr, String datetimeFormat) {  
 		Date parsedDate = null;  
@@ -112,7 +111,6 @@ public class DateTime {
      * @param AddType 添加类型  年，月，天，时，分，秒
      * @param dateTimeCount 数量
      * @return 加后的日期
-     * @author Allen Zhang
      */
     public static synchronized Date addDateTime(Date currentDate, int AddType, int dateTimeCount) {
     	Date addedDate = currentDate;
@@ -130,7 +128,7 @@ public class DateTime {
 	 * 获取当前时间
 	 * 格式：yyyy-MM-dd
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static String getCurrentDate_YYYYMMDD() {
 		return convertDateTime(new Date(), "yyyy-MM-dd");
@@ -140,7 +138,6 @@ public class DateTime {
 	 * 获取当前时间
 	 * 格式：yyyy-MM-dd HH:mm
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
 	 */
 	public static String getCurrentDate_YYYYMMDDHHMM() {
 		return convertDateTime(new Date(), "yyyy-MM-dd HH:mm");
@@ -150,7 +147,7 @@ public class DateTime {
 	 * 获取当前时间
 	 * 格式：yyyy-MM-dd HH:mm:ss
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 * 
 	 */
 	public static String getCurrentDate_YYYYMMDDHHMMSS() {
 		return convertDateTime(new Date(), "yyyy-MM-dd HH:mm:ss");
@@ -160,7 +157,6 @@ public class DateTime {
 	 * 获取当前时间
 	 * 格式：yyyy-MM-dd HH:mm:ss:SS 包含毫秒
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
 	 */
 	public static String getCurrentDate_YYYYMMDDHHMMSS_millisecond() {
 		return convertDateTime(new Date(), "yyyy-MM-dd HH:mm:ss:SS");
@@ -170,7 +166,7 @@ public class DateTime {
 	 * 获取当前时间
 	 * 格式：HH:mm:ss
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static String getCurrentDate_HHMMSS() {
 		return convertDateTime(new Date(), "HH:mm:ss");
@@ -180,7 +176,7 @@ public class DateTime {
 	 * 获取当前时间
 	 * 格式：yyyyMMddHHmmss
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static String getCurrentDate_YYYYMMDDHHMMSSWithOutSeparator() {
 		return convertDateTime(new Date(), "yyyyMMddHHmmss");
@@ -193,7 +189,7 @@ public class DateTime {
 	 * 获取当前时间
 	 * 格式：yyyy年MM月dd日
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static String getCurrentDate_YYYYMMDD_CN() {
 		return convertDateTime(new Date(), "yyyy年MM月dd日");
@@ -203,7 +199,7 @@ public class DateTime {
 	 * 获取当前时间
 	 * 格式：yyyy年MM月dd日HH时mm分
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static String getCurrentDate_YYYYMMDDHHMM_CN() {
 		return convertDateTime(new Date(), "yyyy年MM月dd日HH时mm分");
@@ -213,13 +209,13 @@ public class DateTime {
 	 * 获取当前时间
 	 * 格式：yyyy年MM月dd日HH时mm分ss秒
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static String getCurrentDate_YYYYMMDDHHMMSS_CN() {
 		return convertDateTime(new Date(), "yyyy年MM月dd日HH时mm分ss秒");
 	}
 	/////////////////////////////////////////////////////////////////////////////////////
-   
+
 	
 	/////////////////////////////////////////////////////////////////////////////////////
 	/**
@@ -227,7 +223,7 @@ public class DateTime {
 	 * 格式：yyyy-MM-dd
 	 * @param currentDate 等转换日期
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static String convertDateTime_YYYYMMDD(Date currentDate) {
 		return convertDateTime(currentDate, "yyyy-MM-dd");
@@ -247,7 +243,7 @@ public class DateTime {
 	 * 格式：yyyy-MM-dd HH:mm
 	 * @param currentDate 等转换日期
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static String convertDateTime_YYYYMMDDHHMM(Date currentDate) {
 		return convertDateTime(currentDate, "yyyy-MM-dd HH:mm");
@@ -259,7 +255,7 @@ public class DateTime {
 	 * 格式：yyyy-MM-dd HH:mm:ss
 	 * @param currentDate 等转换日期
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static String convertDateTime_YYYYMMDDHHMMSS(Date currentDate) {
 		return convertDateTime(currentDate, "yyyy-MM-dd HH:mm:ss");
@@ -270,7 +266,7 @@ public class DateTime {
 	 * 格式：yyyy-MM-dd HH:mm:ss:SS
 	 * @param currentDate 等转换日期
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static String convertDateTime_YYYYMMDDHHMMSS_SS(Date currentDate) {
 		return convertDateTime(currentDate, "yyyy-MM-dd HH:mm:ss:SS");
@@ -281,7 +277,7 @@ public class DateTime {
 	 * 格式：dd日HH:mm
 	 * @param currentDate 等转换日期
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static String convertDateTime_DDHHMM(Date currentDate) {
 		return convertDateTime(currentDate, "dd日HH:mm");
@@ -292,7 +288,7 @@ public class DateTime {
 	 * 格式：HH:mm:ss
 	 * @param currentDate 等转换日期
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static String convertDateTime_HHMMSS(Date currentDate) {
 		return convertDateTime(currentDate, "HH:mm:ss");
@@ -303,7 +299,7 @@ public class DateTime {
 	 * 格式：HH:mm
 	 * @param currentDate 等转换日期
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static String convertDateTime_HHMM(Date currentDate) {
 		return convertDateTime(currentDate, "HH:mm");
@@ -317,7 +313,7 @@ public class DateTime {
 	 * 格式：yyyy年MM月dd日
 	 * @param currentDate 等转换日期
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static String convertDateTime_YYYYMMDD_CN(Date currentDate) {
 		return convertDateTime(currentDate, "yyyy年MM月dd日");
@@ -328,7 +324,7 @@ public class DateTime {
 	 * 格式：yyyy年MM月dd日
 	 * @param currentDate 等转换日期
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static String convertDateTime_YYYYMM_CN(Date currentDate) {
 		return convertDateTime(currentDate, "yyyy年MM月");
@@ -340,7 +336,7 @@ public class DateTime {
 	 * 格式：yyyy年MM月dd日HH时mm分
 	 * @param currentDate 等转换日期
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static String convertDateTime_YYYYMMDDHHMM_CN(Date currentDate) {
 		return convertDateTime(currentDate, "yyyy年MM月dd日HH时mm分");
@@ -352,13 +348,13 @@ public class DateTime {
 	 * 格式：yyyy年MM月dd日HH时mm分ss秒
 	 * @param currentDate 等转换日期
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static String convertDateTime_YYYYMMDDHHMMSS_CN(Date currentDate) {
 		return convertDateTime(currentDate, "yyyy年MM月dd日HH时mm分ss秒");
 	}
 	/////////////////////////////////////////////////////////////////////////////////////
-	
+
 	
 	/////////////////////////////////////////////////////////////////////////////////////
 	/**
@@ -366,7 +362,7 @@ public class DateTime {
 	 * 格式：yyyy-MM-dd
 	 * @param currentDate 等解析日期
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static Date parseDateTime_YYYYMMDD(String currentDate) {
 		return parseDateTime(currentDate, "yyyy-MM-dd");
@@ -377,7 +373,7 @@ public class DateTime {
 	 * 格式：yyyy-MM-dd HH:mm
 	 * @param currentDate 等解析日期
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static Date parseDateTime_YYYYMMDDHHMM(String currentDate) {
 		return parseDateTime(currentDate, "yyyy-MM-dd HH:mm");
@@ -388,7 +384,7 @@ public class DateTime {
 	 * 格式：yyyy-MM-dd HH:mm
 	 * @param currentDate 等解析日期
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static Date parseDateTime_YYYYMMDDHHMM_(String currentDate) {
 		return parseDateTime(DateTime.getCurrentDate_YYYYMMDD().split("-")[0] + "-" + currentDate, "yyyy-MM-dd HH:mm");
@@ -400,21 +396,19 @@ public class DateTime {
 	 * 格式：yyyy-MM-dd HH:mm:ss
 	 * @param currentDate 等解析日期
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static Date parseDateTime_YYYYMMDDHHMMSS(String currentDate) {
 		return parseDateTime(currentDate, "yyyy-MM-dd HH:mm:ss");
 	}
-	/////////////////////////////////////////////////////////////////////////////////////
-	
 
-	/////////////////////////////////////////////////////////////////////////////////////
+
 	/**
 	 * 解析时间
 	 * 格式：yyyy年MM月dd
 	 * @param currentDate 等解析日期
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static Date parseDateTime_YYYYMMDD_CN(String currentDate) {
 		return parseDateTime(currentDate, "yyyy年MM月dd");
@@ -425,7 +419,7 @@ public class DateTime {
 	 * 格式：yyyy年MM月dd日HH时mm分
 	 * @param currentDate 等解析日期
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static Date parseDateTime_YYYYMMDDHHMM_CN(String currentDate) {
 		return parseDateTime(currentDate, "yyyy年MM月dd日HH时mm分");
@@ -437,21 +431,18 @@ public class DateTime {
 	 * 格式：yyyy年MM月dd日HH时mm分ss秒
 	 * @param currentDate 等解析日期
 	 * @return 当前时间的字符串形式
-	 * @author Allen Zhang
+	 *  
 	 */
 	public static Date parseDateTime_YYYYMMDDHHMMSS_CN(String currentDate) {
 		return parseDateTime(currentDate, "yyyy年MM月dd日HH时mm分ss秒");
 	}
-	/////////////////////////////////////////////////////////////////////////////////////
-	
-	
-	/////////////////////////////////////////////////////////////////////////////////////
+
     /**
      * 日期 加 年 数
      * @param currentDate 当前时间
      * @param years 年数量
      * @return 加后的日期
-     * @author Allen Zhang
+     *  
      */
     public static Date addYears(Date currentDate, int years) {
     	return addDateTime(currentDate, Calendar.YEAR, years);
@@ -462,7 +453,7 @@ public class DateTime {
      * @param currentDate 当前时间
      * @param months 月数量
      * @return 加后的日期
-     * @author Allen Zhang
+     *  
      */
     public static Date addMonths(Date currentDate, int months) {
     	return addDateTime(currentDate, Calendar.MONTH, months);
@@ -474,18 +465,38 @@ public class DateTime {
      * @param currentDate 当前时间
      * @param days 日数量
      * @return 加后的日期
-     * @author Allen Zhang
+     *  
      */
     public static Date addDays(Date currentDate, int days) {
     	return addDateTime(currentDate, Calendar.DATE, days);
     }
+
+    /*
+    * 获取前时间减去n天
+    * */
+    public  static String subDays(int n) {
+		Calendar calendar = Calendar.getInstance();
+		calendar.set(Calendar.DAY_OF_YEAR, calendar.get(Calendar.DAY_OF_YEAR) - n);
+		Date today = calendar.getTime();
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		String result = format.format(today);
+		return  result;
+	}
+	public  static String addnDays(int n) {
+		Calendar calendar = Calendar.getInstance();
+		calendar.set(Calendar.DAY_OF_YEAR, calendar.get(Calendar.DAY_OF_YEAR) + n);
+		Date today = calendar.getTime();
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		String result = format.format(today);
+		return  result;
+	}
 
     /**
      * 日期 加 小时 数
      * @param currentDate 当前时间
      * @param hours 小时数量
      * @return 加后的日期
-     * @author Allen Zhang
+     *  
      */
     public static Date addHours(Date currentDate, int hours) {
     	return addDateTime(currentDate, Calendar.HOUR, hours);
@@ -496,7 +507,7 @@ public class DateTime {
      * @param currentDate 当前时间
      * @param minutes 分钟数量
      * @return 加后的日期
-     * @author Allen Zhang
+     *  
      */
     public static Date addMinutes(Date currentDate, int minutes) {
     	return addDateTime(currentDate, Calendar.MINUTE, minutes);
@@ -507,30 +518,26 @@ public class DateTime {
      * @param currentDate 当前时间
      * @param seconds 秒数量
      * @return 加后的日期
-     * @author Allen Zhang
+     *  
      */
     public static Date addSeconds(Date currentDate, int seconds) {
     	return addDateTime(currentDate, Calendar.SECOND, seconds);
     }
-	/////////////////////////////////////////////////////////////////////////////////////
-	
-	/////////////////////////////////////////////////////////////////////////////////////
+
+
     /**
      * 生成 MS SQL SERVER 的日期字段的日期值
-     * @author Allen Zhang
+     *  
      */
     public static Date nowForMSSQLDateField() {
     	return new Date();
     }
-	/////////////////////////////////////////////////////////////////////////////////////
-    
-   
-	/////////////////////////////////////////////////////////////////////////////////////
+
     /**
      * 取 星期几
      * @param currentDate 当前日期
      * @return 星期几
-     * @author Allen Zhang
+     *  
      */
     public static synchronized String getWeekByDate(Date currentDate) {
         String week = "";
@@ -546,7 +553,7 @@ public class DateTime {
      * 取 星期几
      * @param currentDate 当前日期
      * @return 星期几
-     * @author Allen Zhang
+     *  
      */
     public static synchronized String getWeekByDateStr(String currentDate) {
         String week = "";
@@ -563,7 +570,7 @@ public class DateTime {
     * @param currentDate 当前日期
     * @param toChinese 是否输出中文
     * @return 星期几
-    * @author Allen Zhang
+    *  
     */
     @SuppressWarnings("static-access")
     public static synchronized String getWeek(Calendar calendar, boolean toChinese) {
@@ -619,7 +626,7 @@ public class DateTime {
      * @param dateBeg 开始日期
      * @param dateEnd 结束日期
      * @return 两个 Date 相差的 天数
-     * @author Allen Zhang
+     *  
      */
     public static long getDays(Date dateBeg, Date dateEnd) {
     	if (dateEnd != null && dateEnd != null) {
@@ -635,7 +642,7 @@ public class DateTime {
      * @param dateBeg 开始日期
      * @param dateEnd 结束日期
      * @return 两个 Date 相差的 分钟数
-     * @author Allen Zhang
+     *  
      */
     public static long getMinutes(Date dateBeg, Date dateEnd) {
     	if (dateEnd != null && dateEnd != null) {
@@ -651,7 +658,7 @@ public class DateTime {
      * @param dateBeg 开始日期
      * @param dateEnd 结束日期
      * @return 两个 Date 相差的 秒数
-     * @author Allen Zhang
+     *  
      */
     public static long getSecond(Date dateBeg, Date dateEnd) {
     	if (dateEnd != null && dateEnd != null) {
@@ -667,7 +674,7 @@ public class DateTime {
      * @param dateBeg 开始日期
      * @param dateEnd 结束日期
      * @return 两个 Date 相差的 毫秒数
-     * @author Allen Zhang
+     *  
      */
     public static long getMilliSecond(Date dateBeg, Date dateEnd) {
     	if (dateEnd != null && dateEnd != null) {
@@ -695,7 +702,7 @@ public class DateTime {
      * @param dateBeg 开始日期
      * @param dateEnd 结束日期
      * @return 两个 Date 相差的 分钟数
-     * @author Allen Zhang
+     *  
      */
     public static long getMinutes_No_abs(Date dateBeg, Date dateEnd) {
     	if (dateEnd != null && dateEnd != null) {
@@ -877,7 +884,7 @@ public class DateTime {
      * @param currentDate 当前日期
      * @param toChinese 是否输出中文
      * @return 星期几
-     * @author Allen Zhang
+     *  
      */
      public static synchronized String getMonth() {
 		Calendar cal = Calendar.getInstance();
@@ -944,7 +951,7 @@ public class DateTime {
       * 取 季度，具体取值一季度 二季度
       * @param toChinese 是否输出中文
       * @return 季度
-      * @author Allen Zhang
+      *  
       */
       public static synchronized String getSeason() {
  		Calendar cal = Calendar.getInstance();
