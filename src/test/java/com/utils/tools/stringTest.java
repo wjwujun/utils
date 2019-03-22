@@ -1,30 +1,40 @@
 package com.utils.tools;
 
 
+import com.utils.tools.utils.fileUtils;
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.LineIterator;
 import org.apache.commons.lang.StringUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class stringTest {
 
      @Test
-     public  void  stringTest(){
-         Calendar calendar = Calendar.getInstance();
-         calendar.set(Calendar.DAY_OF_YEAR, calendar.get(Calendar.DAY_OF_YEAR) -30);
-         Date today = calendar.getTime();
-         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-         String result = format.format(today);
-         System.out.println("111111111111111111");
-         System.out.println(result);
+     public  void  stringTest() throws IOException {
+         LineIterator it = FileUtils.lineIterator(new File("E:/cxyapi.txt"), "UTF-8");
+
+         try {
+             while (it.hasNext()) {
+                 System.out.println("1111111111111");
+                 String line = it.nextLine();
+                 System.out.println(line);
+             }
+         } finally {
+             LineIterator.closeQuietly(it);
+         }
 
      }
+
+
 
 }

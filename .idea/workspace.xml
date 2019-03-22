@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b42a56b-753e-4f76-be61-249faac1268a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/utils/tools/example/StringUtilsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/utils/tools/stringTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/utils/tools/utils/fileUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/tools/StartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utils/tools/StartApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/tools/utils/DateTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utils/tools/utils/DateTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/tools/utils/FormatUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utils/tools/utils/FormatUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/tools/utils/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utils/tools/utils/StringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/utils/tools/stringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/utils/tools/stringTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,7 +20,32 @@
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/utils/tools/stringTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="33" column="10" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="33" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/tools/utils/fileUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="75" column="20" lean-forward="true" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -65,13 +84,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/utils/tools/utils/MD5.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/utils/tools/utils/MoneyUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/utils/tools/utils/Validate.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/utils/tools/utils/StringUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/utils/tools/utils/FormatUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/utils/tools/example/StringUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/utils/tools/StartApplication.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/utils/tools/stringTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/utils/tools/utils/DateTime.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/utils/tools/utils/FileUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/utils/tools/stringTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/utils/tools/utils/fileUtils.java" />
       </list>
     </option>
   </component>
@@ -104,6 +125,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -171,8 +194,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -184,13 +205,13 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552897716583" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553222962483" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
@@ -213,7 +234,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.stringTest.stringTest">
+  <component name="RunManager" selected="JUnit.stringTest">
     <configuration name="StringUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.utils.tools.example.StringUtils" />
       <module name="utils" />
@@ -237,6 +258,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.utils.tools.example" />
       <option name="MAIN_CLASS_NAME" value="com.utils.tools.example.StringUtils" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="stringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="utils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.utils.tools.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.utils.tools" />
+      <option name="MAIN_CLASS_NAME" value="com.utils.tools.stringTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -273,6 +309,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.stringTest" />
         <item itemvalue="JUnit.stringTest.stringTest" />
         <item itemvalue="Spring Boot.StartApplication" />
         <item itemvalue="Application.StringUtils" />
@@ -295,49 +332,52 @@
       <workItem from="1552614048751" duration="989000" />
       <workItem from="1552879892329" duration="424000" />
       <workItem from="1552894994087" duration="2276000" />
+      <workItem from="1552899042545" duration="1376000" />
+      <workItem from="1553217602925" duration="5000" />
+      <workItem from="1553220129131" duration="2827000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StringUtils - 2019.03.15 at 09h 49m 34s.xml">
-      <configuration name="StringUtils" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="stringTest_stringTest - 2019.03.18 at 15h 43m 43s.xml">
+    <history-entry file="stringTest_stringTest - 2019.03.22 at 10h 09m 51s.xml">
       <configuration name="stringTest.stringTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="stringTest_stringTest - 2019.03.18 at 15h 45m 16s.xml">
+    <history-entry file="stringTest_stringTest - 2019.03.22 at 10h 17m 15s.xml">
       <configuration name="stringTest.stringTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="stringTest_stringTest - 2019.03.18 at 15h 46m 28s.xml">
+    <history-entry file="stringTest_stringTest - 2019.03.22 at 10h 17m 56s.xml">
       <configuration name="stringTest.stringTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="stringTest_stringTest - 2019.03.18 at 15h 47m 00s.xml">
+    <history-entry file="stringTest_stringTest - 2019.03.22 at 10h 20m 41s.xml">
       <configuration name="stringTest.stringTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="stringTest_stringTest - 2019.03.18 at 15h 47m 41s.xml">
+    <history-entry file="stringTest - 2019.03.22 at 10h 26m 59s.xml">
+      <configuration name="stringTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="stringTest - 2019.03.22 at 10h 37m 24s.xml">
+      <configuration name="stringTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="stringTest_stringTest - 2019.03.22 at 10h 37m 57s.xml">
       <configuration name="stringTest.stringTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="stringTest_stringTest - 2019.03.18 at 15h 48m 21s.xml">
+    <history-entry file="stringTest_stringTest - 2019.03.22 at 10h 40m 22s.xml">
       <configuration name="stringTest.stringTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="stringTest_stringTest - 2019.03.18 at 15h 49m 04s.xml">
+    <history-entry file="stringTest_stringTest - 2019.03.22 at 10h 40m 49s.xml">
       <configuration name="stringTest.stringTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="stringTest_stringTest - 2019.03.18 at 15h 58m 04s.xml">
-      <configuration name="stringTest.stringTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="stringTest_stringTest - 2019.03.18 at 15h 59m 13s.xml">
-      <configuration name="stringTest.stringTest" configurationId="JUnit" />
+    <history-entry file="stringTest - 2019.03.22 at 10h 47m 14s.xml">
+      <configuration name="stringTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4947000" />
+    <option name="totallyTimeSpent" value="9155000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2596401" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2332905" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -348,7 +388,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25202155" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2722372" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -360,7 +400,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="JRebel Executor" order="14" weight="0.32884097" />
+      <window_info active="true" anchor="bottom" id="JRebel Executor" order="14" visible="true" weight="0.29514825" />
       <window_info anchor="bottom" id="JRebel Console" order="15" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="16" weight="0.32884097" />
       <window_info anchor="bottom" id="Problems" order="17" />
@@ -533,13 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="57" column="37" lean-forward="true" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/tools/utils/StringUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -558,16 +591,6 @@
           <folding>
             <element signature="e#155#156#0" expanded="true" />
             <element signature="e#178#179#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/tools/utils/FormatUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -635,10 +658,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/java/src.zip!/java/util/Calendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="1615" column="7" selection-start-line="1615" selection-start-column="7" selection-end-line="1615" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/tools/utils/FormatUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/utils/tools/stringTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+        <state relative-caret-position="344">
+          <caret line="33" column="10" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="33" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/tools/utils/fileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="75" column="20" lean-forward="true" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
