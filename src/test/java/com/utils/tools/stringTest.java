@@ -1,6 +1,7 @@
 package com.utils.tools;
 
 
+import com.utils.tools.entity.pageCount;
 import com.utils.tools.utils.fileUtils;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.LineIterator;
@@ -21,17 +22,14 @@ public class stringTest {
 
      @Test
      public  void  stringTest() throws IOException {
-         LineIterator it = FileUtils.lineIterator(new File("E:/cxyapi.txt"), "UTF-8");
+         pageCount pa1 = new pageCount();
+         pa1.setPage("1");
+         pa1.setCount(10);
+         pageCount pa2 = new pageCount();
+         pa2.setPage("1");
+         pa2.setCount(20);
 
-         try {
-             while (it.hasNext()) {
-                 System.out.println("1111111111111");
-                 String line = it.nextLine();
-                 System.out.println(line);
-             }
-         } finally {
-             LineIterator.closeQuietly(it);
-         }
+         System.out.println(pa2.compareTo(pa1));
 
      }
 
