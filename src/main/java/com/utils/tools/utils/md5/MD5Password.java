@@ -1,4 +1,4 @@
-package com.utils.tools.utils;
+package com.utils.tools.utils.md5;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

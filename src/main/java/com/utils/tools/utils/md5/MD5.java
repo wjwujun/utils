@@ -1,4 +1,4 @@
-package com.utils.tools.utils;
+package com.utils.tools.utils.md5;
 
 import java.io.File;
 import java.io.FileInputStream;
