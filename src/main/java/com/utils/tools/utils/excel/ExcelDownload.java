@@ -95,9 +95,15 @@ public class ExcelDownload {
         
         HSSFRow row4 = sheet.createRow(3);
         for (int i = 0; i < listName.size(); i++) {
+            HSSFCellStyle cellStyleA = wb.createCellStyle();
+            cellStyleA.setAlignment(HorizontalAlignment.CENTER); // 居中
+            cellStyleA.setVerticalAlignment(VerticalAlignment.CENTER);//垂直
+            cellStyleA.setFillForegroundColor(IndexedColors.GREY_25_PERCENT.getIndex());//设置背景色
+            cellStyleA.setFillPattern(FillPatternType.SOLID_FOREGROUND);  //设置背景色
+
             sheet.setColumnWidth(i, 5000);   //设置宽度
             HSSFCell cell5 = row4.createCell(i);
-            cell5.setCellStyle(cellStyle1);
+            cell5.setCellStyle(cellStyleA);
             cell5.setCellValue(listName.get(i));
 
         }
