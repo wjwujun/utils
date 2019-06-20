@@ -118,12 +118,14 @@
             <artifactId>springfox-swagger2</artifactId>
             <version>2.7.0</version>
         </dependency>
-        <!-- swagger2-UI-->
+
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.7.0</version>
         </dependency>
+        <!--swagger 接口文档插件-->
+
         <!-- ActiveMQ -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -140,8 +142,66 @@
             <artifactId>activemq-pool</artifactId>
             <version>5.15.9</version>
         </dependency>
+
     </dependencies>
 
+    <build>
 
+        <plugins>
+            <!-- Spring-Boot插件（用于打包） -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <executable>true</executable>
+                </configuration>
+            </plugin>
+
+            <!--swaager 离线文档-->
+            <!--
+                cmd进入项目根路径:
+                        mvn swagger2markup:convertSwagger2markup
+                        mvn asciidoctor:process-asciidoc
+               -->
+            <plugin>
+                <groupId>io.github.swagger2markup</groupId>
+                <artifactId>swagger2markup-maven-plugin</artifactId>
+                <version>1.3.1</version>
+                <configuration>
+                    <!-- api-docs访问url -->
+                    <swaggerInput>http://localhost:10086/v2/api-docs</swaggerInput>
+                    <!-- 生成为单个文档，输出路径
+                    <outputFile>src/main/doc/api</outputFile>-->
+                    <!-- 生成为多个文档，输出路径 -->
+                    <outputDir>./doc/apiall</outputDir>
+                    <config>
+                        <!-- wiki格式文档 -->
+                        <!--<swagger2markup.markupLanguage>CONFLUENCE_MARKUP</swagger2markup.markupLanguage> -->
+                        <!-- ascii格式文档 -->
+                        <swagger2markup.markupLanguage>ASCIIDOC</swagger2markup.markupLanguage>
+                        <!-- markdown格式文档 -->
+                        <!--<swagger2markup.markupLanguage>MARKDOWN</swagger2markup.markupLanguage>-->
+                        <swagger2markup.pathsGroupedBy>TAGS</swagger2markup.pathsGroupedBy>
+                    </config>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.asciidoctor</groupId>
+                <artifactId>asciidoctor-maven-plugin</artifactId>
+                <version>1.5.6</version>
+                <configuration>
+                    <sourceDirectory>./doc/apiall</sourceDirectory>
+                    <outputDirectory>./doc/api/html</outputDirectory>
+                    <backend>html</backend>
+                    <sourceHighlighter>coderay</sourceHighlighter>
+                    <attributes>
+                        <toc>left</toc>
+                    </attributes>
+                </configuration>
+            </plugin>
+
+        </plugins>
+
+    </build>
 
 </project>
