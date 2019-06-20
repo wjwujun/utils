@@ -160,6 +160,7 @@
             <!--swaager 离线文档-->
             <!--
                 cmd进入项目根路径:
+                
                         mvn swagger2markup:convertSwagger2markup
                         mvn asciidoctor:process-asciidoc
                -->
