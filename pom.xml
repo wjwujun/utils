@@ -142,6 +142,11 @@
             <artifactId>activemq-pool</artifactId>
             <version>5.15.9</version>
         </dependency>
+        <!--测试-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
 
     </dependencies>
 
@@ -160,7 +165,7 @@
             <!--swaager 离线文档-->
             <!--
                 cmd进入项目根路径:
-                
+
                         mvn swagger2markup:convertSwagger2markup
                         mvn asciidoctor:process-asciidoc
                -->
@@ -196,7 +201,15 @@
                     <backend>html</backend>
                     <sourceHighlighter>coderay</sourceHighlighter>
                     <attributes>
+                        <!--菜单栏在左边-->
                         <toc>left</toc>
+                        <!--多标题排列-->
+                        <toclevels>3</toclevels>
+                        <!--自动打数字序号-->
+                        <sectnums>true</sectnums>
+                        <hardbreaks></hardbreaks>
+                        <sectlinks></sectlinks>
+                        <sectanchors></sectanchors>
                     </attributes>
                 </configuration>
             </plugin>
