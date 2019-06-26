@@ -22,3 +22,39 @@ public class StatusCode {
     public static final int DATA_IS_EMPTY=212; //文件上传失败!
 
 }
+
+/*
+public enum  StatusCode {
+    OK (200, "成功"),
+    ERROR (201, "失败"),
+    ADD_ERROR (2002, "添加失败"),
+    UPDATE_ERROR (2003, "更新失败"),
+    DELETE_ERROR (2004, "删除失败"),
+    QUERRY_NOT_FOND (2005, "查询失败"),
+
+    KEY_ERROR (2007, "key错误"),
+    ACCESS_ERROR (2008, "权限不足");
+
+
+    private Integer key;
+    private String value;
+
+    private StatusCode(Integer key, String value) {
+        this.key = key;
+        this.value = value;
+    }
+
+    public Integer getKey() {
+        return key;
+    }
+    public String getValue() {
+        return value;
+    }
+
+
+}
+*/
+
+
+
+
