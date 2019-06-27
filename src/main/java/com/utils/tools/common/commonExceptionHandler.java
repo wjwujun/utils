@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class commonExceptionHandler {
     @ExceptionHandler(Exception.class)
     @ResponseBody
-    public Result error(Exception e) {
+    public Result error(CustomException e) {
         e.printStackTrace();
         return new Result(false, StatusCode.ERROR, e.getMessage());
     }
