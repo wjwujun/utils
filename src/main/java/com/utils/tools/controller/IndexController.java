@@ -1,6 +1,8 @@
 package com.utils.tools.controller;
 
+import com.google.common.util.concurrent.RateLimiter;
 import net.coobird.thumbnailator.Thumbnails;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
@@ -11,6 +13,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 @RestController
 @RequestMapping("/utils")
@@ -27,9 +30,25 @@ public class IndexController {
     @Value("${spring.http.multipart.location}")
     private String filePath;*/
 
+    //每1s产生5个令牌，也就是说该接口1s只允许调用5次
+    private RateLimiter rateLimiter = RateLimiter.create(5,1, TimeUnit.SECONDS);
+
     @GetMapping("/login")
     public void login(){
+        if(rateLimiter.tryAcquire()) {
+            //获取到令牌，进行逻辑处理
+            System.out.println( "处理成功");
+            System.out.println("-----------------------------------");
 
+        }else {
+            //未获取到令牌
+            System.out.println( "请求频繁");
+        }
+    }
+
+    @Test
+    public void testApi(){
+        System.out.println("111111111111");
     }
 
 
